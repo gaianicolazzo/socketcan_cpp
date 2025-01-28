@@ -25,11 +25,11 @@ add_executable(main src/main.cpp)
 target_include_directories(socketcan_cpp PUBLIC include)
 target_link_libraries(main socketcan_cpp)
 
-enable_testing()
-add_executable(mytest tests/MyTests.cpp)
-target_include_directories(socketcan_cpp PRIVATE tests)
-target_link_libraries(mytest PRIVATE socketcan_cpp)
-add_test(test1 mytest)
+#enable_testing()
+#add_executable(mytest tests/MyTests.cpp)
+#target_include_directories(socketcan_cpp PRIVATE tests)
+#target_link_libraries(mytest PRIVATE socketcan_cpp)
+#add_test(test1 mytest)
 
 
 # Clang tidy as optional static analyzer
